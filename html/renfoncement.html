@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lity.css" />
+
+</head>
+
+<body onload="window.scrollTo(0,1);">
+
+    <div id="wrapper">
+
+        <div id="image">
+            <img src="../images/Future3.jpg" width="auto" height="auto" usemap="#image-map">
+
+            <map name="image-map">
+                <area data-lity href="#porte" coords="322,188,325,454,427,436,427,191" shape="poly">
+                <area data-lity href="#ecran" coords="248,126,310,130,307,402,252,412" shape="poly">
+                <area
+                    onclick="afficheMessage('Tu as l\'impression d\'avoir fumé quelque chose de vraiment pas net en regardant ce paysage. Est ce que ta carrière s\'arrêtera la dessus ? ');"
+                    coords="521,72,515,406,875,450,880,46" shape="poly">
+                <area
+                    onclick="afficheMessage('Tu te vois à travers ce solcomme dans un miroir. A toi de choisir si cette image plaisante non.');"
+                    coords="540,414,159,502,680,632,894,470" shape="poly">
+                <area onclick="afficheMessage('L\'écriture égyptienne be like :');"
+                    coords="919,5,917,221,1014,220,1011,0" shape="poly">
+            </map>
+        </div>
+        <div id="consignes"></div>
+    </div>
+
+    </div>
+    <div class="inline lity-hide" id="porte">
+        <p>La porte est bloqué.
+            <br> Evidemment. <br>
+            Tu trouves sur la porte un petit clavier, qui t'invite à rentrer un code. <br>
+            "4 lettres, pas une de plus."
+        </p>
+
+        <FORM Name='Formulaire3'>
+            Le mot <input Name='Pierre' placeholder="AAAA" />
+            <br>
+            <input type='button' Name='Verifier' Value='Verifier' onClick='thirdPuzzle()'>
+            <br>
+            <div id="reponse">
+
+            </div>
+        </FORM>
+        </p>
+    </div>
+    <div class="inline lity-hide" id="ecran">
+        <p>Tu t'approches de l'écran et tu vois une plâtrée de texte en russe. Quand tu allais abandonner ta "lecture",
+            tu te rends compte qu'il y a un petit bout de texte en français :</p>
+        <p>
+            Pierre, souvent associée à la Chine, peut prendre de nombreuses couleurs, mais on ne la connaît généralement
+            que pour sa plus commune. Bien connue des conquistadors, l'origine étymologique de son nom vient de la
+            langue espagnole. Il se pourrait que la personne devant cet écran ait entendu parler de cette pierre de très
+            nombreuses fois dans sa vie.
+        </p>
+
+    </div>
+
+
+    <script src="../js/consignes.js"></script>
+    <script src="../js/imageMapResizer.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lity.js"></script>
+    <script src="../js/verif.js"></script>
+
+    <script>
+        afficheMessage("\'Je crois que je m'approche du but.\'");
+        imageMapResize();
+
+    </script>
+</body>
+
+</html>

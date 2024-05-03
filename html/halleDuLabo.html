@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lity.css" />
+
+</head>
+
+<body onload="window.scrollTo(0,1);">
+
+    <div id="wrapper">
+
+        <div id="image">
+            <img src="../images/Future4.webp" width="auto" height="auto" usemap="#image-map">
+
+            <map name="image-map">
+                <area target="" alt="Porte" title="Porte" href="./couloirEtrange.html" coords="739,209,1107,628"
+                    shape="rect">
+                <area
+                    onclick="afficheMessage('Des écriture en russe accompagné de dessin étrange. Ou est ce que je me suis fourré ? ');"
+                    coords="533,224,522,582,645,588,639,211" shape="poly">
+                <area onclick="afficheMessage('Des PC qui font des Bips et des Flash.');"
+                    coords="1327,507,1324,633,1542,662,1578,494" shape="poly">
+                <area onclick="afficheMessage('L\'exterieur est nuageux , vaporeux , on dirais une autre dimension.');"
+                    coords="370,203,451,236,446,531,375,531" shape="poly">
+                <area onclick="afficheMessage('Un sol tellement propre qu\'on se voit dedans.');"
+                    coords="609,650,280,924,1354,939,1147,648" shape="poly">
+            </map>
+        </div>
+        <div id="consignes"></div>
+    </div>
+
+    </div>
+    <div class="inline lity-hide" id="ordi">
+        <p>dsdzsdsdsd\nfefefefe<br>dzffzfzfz<br>fezvef<br></p>
+    </div>
+
+
+
+    <script src="../js/consignes.js"></script>
+    <script src="../js/imageMapResizer.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lity.js"></script>
+    <script>
+        afficheMessage("Tu commence à trouver que ce Logan est vraiment un gars bizarre et que son histoire de clé est l'arnaque du siècle.");
+        imageMapResize();
+
+    </script>
+</body>
+
+</html>

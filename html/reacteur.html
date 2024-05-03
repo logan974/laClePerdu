@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lity.css" />
+
+</head>
+
+<body onload="window.scrollTo(0,1);">
+
+    <div id="wrapper">
+
+        <div id="image">
+            <img src="../images/Future5.webp" width="auto" height="auto" usemap="#image-map">
+
+            <map name="image-map">
+                <area data-lity href="#cle"
+                    coords="576,111,574,287,594,319,594,623,575,632,571,712,753,779,925,787,1090,766,1205,725,1193,649,1193,320,1210,312,1216,105,1083,53,849,37,675,65"
+                    shape="poly">
+                <area onclick="afficheMessage('Ce machin ressemble à une machine à laver. Non ?');"
+                    coords="1548,557,1545,668,1620,682,1628,564" shape="poly">
+                <area onclick="afficheMessage('Un mur');" coords="109,344,141,694,585,591,587,414" shape="poly">
+            </map>
+        </div>
+        <div id="consignes"></div>
+    </div>
+
+    </div>
+    <div class="inline lity-hide" id="cle">
+        <p>Tu regardes le sol devant un espèce de réacteur. Tu commences à sérieusement te demander où est-ce que tout
+            ça va te mener. <br>
+            - Mais quel rapport avec cette fichue clé !
+            - <b>AUCUN !</b> te dit une voix avec fort accent russe. <br>
+            Perturbé, tu te retournes doucement, t'attendant au pire. <br>
+            Tu vois derrière toi Logan, grand sourire.
+            - "Je vois que tu as surmonté mon petit jeu camarade. Je ne suis en effet pas seulement un fabricant de
+            sardine. Je suis un agent triple suisse. <br>
+            - Suisse ? <br>
+            - Quoi c'est mon accent ? Mon arrière grand-mère était Moldave. <br>
+            - Euhhhh, et toute cette installation c'est quoi ?? <br>
+            - Du carton pâtes. <br>
+            - Et ces machines ?? <br>
+            - Des machines qui font beep et qui font flash. <br>
+            - Et l'extérieur? <br>
+            - Des écrans. <br>
+            - Et cette histoire de clé ?? Luc, Sixtine, Martin ? <br>
+            - Des amis à moi, pour le coup ça c'est pas inventé. <br>
+            - Et c'est quoi le grand nettoyage du coup ?? Et les dossiers sur Martin ?? <br>
+            - On en reparlera, un jour <br>
+            - ET POURQUOI TOUT CA <br>
+            - C'était drôle. Et moins je sais que je peux t'appeler pour des cas plus sensibles <br>
+            - Parce que j'ai fait 3 énigmes claquées... <br>
+            - ... Bon euh j'avais pas le temps ok. Tu sais c'est dur de faire des énigmes... <br>
+        </p>
+
+
+        <p>A ceux moment la tu te demande devant ton écran qu'est ce qu'il vient de se passer. Et la réponse est simple
+            ,
+            une pirouette scénaristique !</p>
+
+
+        <button
+            onclick="window.location.href = 'https\:\/\/docs.google.com/document/d/1TSLinAC8whJPbTj9Mlg989xSdhoDF2MOSKDSPrJuJ2s/edit?usp=sharing'">Continuer</button>
+
+
+    </div>
+
+
+
+    <script src="../js/consignes.js"></script>
+    <script src="../js/imageMapResizer.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lity.js"></script>
+    <script>
+        afficheMessage("La salle c'est ouverte , nous y voila.");
+        imageMapResize();
+
+    </script>
+</body>
+
+</html>

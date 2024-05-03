@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lity.css" />
+
+</head>
+
+<body onload="window.scrollTo(0,1);">
+
+    <div id="wrapper">
+
+        <div id="image">
+            <img src="../images/wallhaven-z8p2mg_v2.jpg" width="auto" height="auto" usemap="#image-map">
+
+            <map name="image-map">
+                <!-- <area href="./index.html" coords="678,594,763,536,700,513,674,435,576,475,605,570" shape="poly"> -->
+                <area data-lity href="#ordi" coords="678,594,763,536,700,513,674,435,576,475,605,570" shape="poly">
+                <area
+                    onclick="afficheMessage('Tu vois au loin un immeuble.Encore un construit par Martin.Il est partout ce gars...');"
+                    coords="1240,5,1181,377,1856,573,1910,431,1918,43,1888,43" shape="poly">
+                <area onclick="afficheMessage('Ta dernière affaire a été ... difficile');"
+                    coords="49,85,230,502,741,377,707,65" shape="poly">
+                <area onclick="afficheMessage('Pas le temps de s\'assoir !! (flemmarde va)');"
+                    coords="1025,472,844,689,1020,687,1096,656,1112,523,1066,492" shape="poly">
+                <area onclick="afficheMessage('Belle voiture hein? Dommage qu\'il y est eu un meutre à l\'intérieur.');"
+                    coords="391,66,471,61,461,4,383,9" shape="poly">
+
+            </map>
+        </div>
+
+        <div id="consignes">
+
+        </div>
+
+    </div>
+    <div class="inline lity-hide" id="ordi">
+
+        <div>
+            <p>"Bon c'est le moment de contacter Logan , voyons voir ce qu'il a à dire." Te dit tu.<br>
+                <br>
+                - Bonjour Madame Gonthier , un plaisir de faire affaire avec vous.Les données que j'ai perdu sur cette
+                clé
+                est de la plus haute importance et doivent impérativement être retrouvé ! <br>
+                - Mais vous avez perdu quoi , a pars des fichiers excel et des plans de boîtes de conserves ?<br>
+                - Je suis désolé mais je ne peux pas vous le dire . Et puis bon faut faire annoncer le scenario...<br>
+                - Hein?<br>
+                - ... par contre sachez que je vous laisse un accès complet à mon bureau , 24/7 !<br>
+                - Et vous , vous ferez quoi pendant ce temps là ? <br>
+                - Et bien rien. Comme d'habitude en fait.<br>
+
+                "Quel clown."<br>
+            </p>
+        </div>
+        <div><button onclick="window.location.href = './bureauLogan.html'">Click !</button></div>
+    </div>
+
+
+
+    <script src="../js/consignes.js"></script>
+    <script src="../js/imageMapResizer.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lity.js"></script>
+    <script>
+        afficheMessage("Voici ton bureau , c'est le moment de démarrer ton enquète. Mais par ou commencer ?");
+        imageMapResize();
+
+    </script>
+</body>
+
+</html>

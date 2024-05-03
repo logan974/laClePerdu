@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lity.css" />
+</head>
+
+<body onload="window.scrollTo(0,1);">
+    <div id="wrapper">
+        <div id="image">
+            <img src="./images/bureauLoganFloue.jpg" width="auto" height="auto" usemap="#image-map">
+            <map name="image-map">
+                <area data-lity href="#start" coords="1206,855,2534,1257" shape="rect">
+                <area data-lity href="#tuto" coords="1371,223,2366,625" shape="rect">
+
+            </map>
+
+            <!-- <img src="./images/wallhaven-z8p2mg.jpg" width="auto" height="auto" usemap="#image-map"> -->
+        </div>
+        <div id="consignes"></div>
+    </div>
+    <div class="inline lity-hide" id="start">
+        <div>
+            <p>Tu es une detective privé a réputation international, tu es connue pour ta capacité a pouvoir retrouver
+                n'importe quoi dans un temps record. Aujourd'hui tes talents vont être mis à rude épreuve.
+                <br>
+                Ta mission : découvrir qui à volé la clé USB de Logan , industriel notoire dans le domaine des boites de
+                sardines.<br>
+                Tu as plusieurs suspect dans ton viseur : <br>
+                - Luc , trader en crypto , au fait d'une rumeur comme quoi Logan aurais mis sur cette clé un
+                porte-feuille
+                crypto, non sécurisé et bien rempli.De quoi se faire un beau pactole sans se fouler (surtout qu'il n'est
+                pas très talentieux...) <br>
+
+                - Martin, magnat de l'immobilier , mais également Mister Univers 2033. Semblerait que Logan possède des
+                vidéo "compromettante" pouvant faire chuter sa carrière, et évidemment, il se trouverais sur cette dites
+                clé.... <br>
+
+                - Sixtine finalement , politicienne controversé connue pour ces slogans comme "pour un monde propre" ou
+                encore "On va passer un coup de Karcher". On n'a jamais trop su qu'est ce qu'elle veux nettoyer mais
+                Logan semble avoir en sa possession des leaks de ses réunions en internes, avec ses réelles
+                intentions.<br>
+
+                Logan n'a pas voulu te dire qu'est ce qu'il y avait réelement à l'intérieur, mais t'as confirmé que le
+                sujet étais sensibles. <br>
+            </p>
+        </div>
+        <div><button onclick="window.location.href = './html/lancement.html'">Click !</button></div>
+
+    </div>
+    <div class="inline lity-hide" id="tuto">
+        <div>
+
+            <p>La partie en bas affiche des commentaires sur ce que tu vois. Click partout sur les images pour trouver
+                les point intéressant (Rien de trop caché j'suis pas un batard).<br> Tu auras soit un autre commentaire
+                (peut être important a retenir) ou sinon un lien vers une enigme ou un autre lieu.<br>
+                Tu as le droit de chercher sur internet, c'est même necessaire !<br>
+                Si <i>par hasard</i> il y a des zones de textes à remplir , click sur le bouton pour vérifier, <b>pas
+                    sur entrée</b> (c'est buggé)
+                <br><b>IL N'Y A PAS DE SYSTEME DE SAUVEGARDE</b>. Il faut juste que tu reviennent à la page ou tu t'es
+                arreté.<br>
+                GLHF !
+            </p>
+        </div>
+
+
+
+        <script src="js/consignes.js"></script>
+        <script src="js/imageMapResizer.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/lity.js"></script>
+        <script>
+            afficheMessage("Salutation et bienvenue.Clique sur le bouton pour commencer.");
+            imageMapResize();
+
+        </script>
+</body>
+
+</html>

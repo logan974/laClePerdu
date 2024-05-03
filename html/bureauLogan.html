@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lity.css" />
+
+</head>
+
+<body onload="window.scrollTo(0,1);">
+
+    <div id="wrapper">
+
+        <div id="image">
+            <img src="../images/bureauLogan.jpg" width="auto" height="auto" usemap="#image-map">
+
+            <map name="image-map">
+                <area data-lity href="#hautParleur" title="Haut Parleur" coords="85,217,332,592" shape="rect">
+                <area data-lity href="#portable" title="Portable"
+                    coords="798,442,783,495,716,529,830,537,894,522,890,445" shape="poly">
+                <area data-lity href="#affiche" title="Affiche" coords="944,15,933,336,1534,307,1514,-1,1303,2"
+                    shape="poly">
+                <area data-lity href="#machine" title="Machine"
+                    coords="1216,439,1191,481,1186,502,1156,527,1156,567,1261,603,1400,587,1401,543,1397,486,1333,495,1302,446"
+                    shape="poly">
+                <area data-lity href="#ordi" title="Ordi" coords="990,339,881,549,1053,594,1093,532,1147,334,1063,337"
+                    shape="poly">
+                <area
+                    onclick="afficheMessage('Tu t\'assoie sur la chaise. Tu t\'es endormie. <b> Game over </b>. Nan je déconne');"
+                    title="Chaise" coords="672,522,592,553,611,678,855,679,876,593,696,579" shape="poly">
+                <area
+                    onclick="afficheMessage('Une lumière tamisé sort de cette fenêtre. \'Vraiment une drole d\'ambiance dans ce bureau\'');"
+                    title="Fenetre" coords="424,-1,424,489,767,475,759,9" shape="poly">
+            </map>
+        </div>
+        <div id="consignes"></div>
+    </div>
+
+    </div>
+    <div class="inline lity-hide" id="portable">
+        <p>Son ordinateur portable. On dirais qu'il dessine... une boite de conserve ! Il est marqué "Ouverture 2% plus
+            facile".
+            <br>
+            "Il y a des fois ou on aime trop son boulot..." te dit tu, juste avant de remarquer une drole de phrase
+            <b>"The
+                cake is a lie"</b>
+        </p>. Je ferais mieux de chercher d'ou ça viens.
+        </p>
+    </div>
+    <div class="inline lity-hide" id="affiche">
+        <p>Tu regarde une des droles d'affiches qui se trouve sur le mur. Une d'elle te parais étrange. <b>"Press F to
+                pay
+                respect"</b> . <br>
+            "Mais pourquoi il a ça dans son bureau lui?". C'est en effet une drole d'affiche de motivation. Et une
+            affiche a retenir...</p>
+    </div>
+    <div class="inline lity-hide" id="machine">
+        <p>"Une antiquité" te dit tu en regardant cette machine à écrire, tout droit sortie d'un autre temps. Il est
+            marqué dessus en lettre d'or <b>"That belong in a museum"</b>.
+            <br>
+            "Sans blague ! Mais ce texte n'a pas ça place ici non plus, on dirais qu'il a été écrit ici récemment.">
+        </p>
+    </div>
+    <div class="inline lity-hide" id="hautParleur">
+        <p>Tu t'approche d'une drole de machine. On dirais un haut parleur , mais avec une horloge dessus. "Bizarre". En
+            continuant ton inspection tu remarque que l'étiquette dessus n'a rien d'anodine. <b>"Il n'y a que toi pour
+                savoir quelles sont vraiment tes envies... Il n'y a que toi pour savoir quel sens donner à ta vie..".
+            </b>
+            <br>
+            "Je savais pas qu'il aimais les citations... très niais."
+            <br>
+            Mais je te permet pas ! Euh... bref tu te dit que cette étiquette n'est définitevement pas à ça place.
+        </p>
+    </div>
+    <div class="inline lity-hide" id="ordi">
+        <p>"Un mac , comme tout les dirigeants d'entreprise quoi". Tu allume l'appareil et te rend compte qu'il est
+            vérouillé . Mais pas par un simple code. 4 champs de texte son à remplir.
+            <br>A l'intérieur de ces champs de texte , en grisé : YYYY.
+            <br>
+            -- Indice 1 --
+            <br>
+            "Je reconnais ce format c'est pour rentrée des années !"
+            <br>
+            -- Indice 2 --
+            <br>
+            "Je ferais mieux de comprendre c'est drole de phrase que j'ai pu trouver dans la salle, il y en a 4 ! "
+        <FORM Name='Formulaire1'>
+            Gateau : <input Name='Gateau' type="number" placeholder="YYYY" max="9999" />
+            <br>
+            F : <input Name='F' type="number" placeholder="YYYY" max="9999" />
+            <br>
+            Un sens a ta vie : <input Name='Vie' type="number" placeholder="YYYY" max="9999" />
+            <br>
+            Musée : <input Name='Musee' type="number" placeholder="YYYY" max="9999" />
+            <br>
+            <input type='button' Name='Verifier' Value='Verifier' onClick='firstPuzzle()'>
+            <br>
+            <div id="reponse">
+
+            </div>
+        </FORM>
+        </p>
+    </div>
+
+
+
+    <script src="../js/consignes.js"></script>
+    <script src="../js/imageMapResizer.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lity.js"></script>
+    <script src="../js/verif.js"></script>
+    <script>
+        afficheMessage("Tu arrive dans un bureau, qui pourrais être la définition du \" Entre tradition et modernité \". Il ne semble pas y avoir de signe de vol. Mais il va quand même falloir fouillé ! ");
+        imageMapResize();
+
+    </script>
+</body>
+
+</html>
